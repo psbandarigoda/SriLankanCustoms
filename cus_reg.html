@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+	<title>Customs Registraion</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+ <style type="text/css">
+      {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+        background: rgb( 253, 254, 254 );
+      }
+
+      .row{
+          background: transparent;
+          border-radius: 30px;
+          box-shadow: 12px 12px 22px grey;
+          margin-top: 50px;
+      } 
+
+      .sign_up{
+      	text-align: center;
+        margin-left: -220px;
+      }
+
+      h1{
+      	text-align: center;
+      	 margin-left: -220px;
+      }
+
+      img{
+        width: 100%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 30px;
+        margin-top: 70px;
+
+      }
+      .form-control{
+        font-size: 14px
+      }
+
+      .btn2{
+        border: none;
+        outline: none;
+        height: 50px;
+        width: 100%;
+        background:   #3498db;
+        color: white;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 14px
+
+      }
+      .btn2:hover{
+        background: #fff;
+        border: 1px solid;
+        color: black;
+
+
+      }
+      .form_link{
+      	font-size: 12px;
+      	margin-bottom: 30px
+      }
+
+    </style>
+
+</head>
+<body>
+
+	 <section class="Form my-4 mx-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <img src="images/edit.jpg" class="image-fluid" alt="">
+          </div>
+          <div class="col-lg-7 px-5 pt-5">
+            <h1 class="font-weight-bold py-3">Sri Lanka Customs</h1>
+            <h4 class="sign_up">Sign up</h4>
+            <form>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <input type="cName" id="cName" name="cName" placeholder="Company Name" class="form-control my-3 p-4">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <input type="tin_Number" id="tin_Number" name="tin_Number" placeholder="TIN Number" class="form-control my-3 p-4">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <input type="email" id="email" name="email" placeholder="Email" class="form-control my-3 p-4">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <input type="password" placeholder="Password" class="form-control my-3 p-4">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <input type="password" placeholder="Confirm Password" class="form-control my-3 p-4">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <button type="button" id="regbtn" formaction="index.html" class="btn2 mt-3 mb-5" onclick="validate()">Register</button>
+                </div>
+              </div>
+             
+             <div class="form_link">
+              <p>Already have an account?<a href="customs_login.html">Login here</a></p>
+          	</div>
+
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      
+    function validate(){
+    var regName = /^[a-zA-Z\-]+$/;
+    var name = document.getElementById('cName').value;
+    if(!regName.test(cName)){
+        alert('Please enter your company name');
+        document.getElementById('').focus();
+        return false;
+    }else{
+        alert('Valid company name given.');
+        return true;
+    }
+
+
+
+}
+
+function validate()
+{
+  var TINNumber = document.getElementById('tin_Number').value;
+  var tinRGEX = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+  var tinResult = tinRGEX.test(TINNumber);
+  alert("TIN Number:"+tinResult );	
+}
+
+ function validate(){
+    var regEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    var email = document.getElementById('email').value;
+    if(!regEmail.test(email)){
+        alert('Please enter your Email address');
+        document.getElementById('email').focus();
+        return false;
+    }else{
+        alert('Valid company Email address.');
+        return true;
+    }
+
+
+
+}
+
+    </script>
+
+</body>
+</html>
