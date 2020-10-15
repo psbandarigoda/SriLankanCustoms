@@ -401,6 +401,41 @@ input[type='checkbox'] {
 /* end of fade animation for image slider - magnific popup */
 
 
+/*Search bar*/
+.active-pink-2 input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #f48fb1;
+  box-shadow: 0 1px 0 0 #f48fb1;
+}
+.active-pink input[type=text] {
+  border-bottom: 1px solid #f48fb1;
+  box-shadow: 0 1px 0 0 #f48fb1;
+}
+.active-purple-2 input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #ce93d8;
+  box-shadow: 0 1px 0 0 #ce93d8;
+}
+.active-purple input[type=text] {
+  border-bottom: 1px solid #ce93d8;
+  box-shadow: 0 1px 0 0 #ce93d8;
+}
+.active-cyan-2 input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+}
+.active-cyan input[type=text] {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+}
+.active-cyan .fa, .active-cyan-2 .fa {
+  color: #4dd0e1;
+}
+.active-purple .fa, .active-purple-2 .fa {
+  color: #ce93d8;
+}
+.active-pink .fa, .active-pink-2 .fa {
+  color: #f48fb1;
+}
+
 /*************************/
 /*     02. Preloader     */
 /*************************/
@@ -1228,3 +1263,53 @@ input[type='checkbox'] {
 	text-align: center;
 }
 
+/**********************/
+/*     16. Footer     */
+/**********************/
+.footer {
+  padding-top: 1.625rem;
+  padding-bottom: 0.1rem;
+  background: #2e2e2e;
+}
+
+.footer .footer-col {
+  margin-bottom: 2.25rem;
+}
+
+.footer h4 {
+  margin-bottom: 1rem;
+}
+
+.footer .list-unstyled .fas {
+  color: #00bfd8;
+  font-size: 0.5rem;
+  line-height: 1.375rem;
+}
+
+.footer .list-unstyled .media-body {
+  margin-left: 0.625rem;
+}
+
+.footer .fa-stack {
+  margin-bottom: 0.75rem;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.footer .fa-stack .fa-stack-1x {
+    color: #fff;
+  transition: all 0.2s ease;
+}
+
+.footer .fa-stack .fa-stack-2x {
+  color: #00bfd8;
+  transition: all 0.2s ease;
+}
+
+.footer .fa-stack:hover .fa-stack-1x {
+  color: #fff;
+}
+
+.footer .fa-stack:hover .fa-stack-2x {
+    color: #00a7bd;
+}
