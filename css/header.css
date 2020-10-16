@@ -982,10 +982,11 @@ input[type='checkbox'] {
   margin-left: 0.625rem;
 }
 
+
 .footer .fa-stack {
-  margin-bottom: 0.75rem;
-  margin-right: 0.5rem;
-  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-right: 0.01rem;
+  font-size: 1.01rem;
 }
 
 .footer .fa-stack .fa-stack-1x {

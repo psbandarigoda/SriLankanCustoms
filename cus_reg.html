@@ -123,7 +123,7 @@
 
               <div class="form-row">
                 <div class="col-lg-7">
-                  <button type="button" id="regbtn" formaction="index.html" class="btn2 mt-3 mb-5" onclick="validate()">Register</button>
+              <a href="index.html"><button type="button" id="regbtn"  class="btn2 mt-3 mb-5" onclick="validate()">Register</button></a>
                 </div>
               </div>
              
@@ -157,13 +157,6 @@
 
 }
 
-function validate()
-{
-  var TINNumber = document.getElementById('tin_Number').value;
-  var tinRGEX = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
-  var tinResult = tinRGEX.test(TINNumber);
-  alert("TIN Number:"+tinResult );	
-}
 
  function validate(){
     var regEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
