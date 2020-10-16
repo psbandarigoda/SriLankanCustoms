@@ -85,8 +85,8 @@ section {
 }
 
 .departments .tab-pane img {
-  float: center;
-  width: 50rem;
+  float: left;
+  max-width: 300px;
   padding: 0 15px 15px 0;
 }
 
