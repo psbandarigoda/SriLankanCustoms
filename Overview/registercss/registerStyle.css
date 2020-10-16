@@ -806,6 +806,7 @@ input[type='checkbox'] {
 	padding-top: 4rem;
 	padding-bottom: 1.625rem;
 	text-align: center;
+  margin-top: 12rem;
 }
 
 .cards-1 h2 {
@@ -814,9 +815,10 @@ input[type='checkbox'] {
 
 .cards-1 .card {
 	max-width: 21rem;
-	height: 30rem; 
+	height: 25rem;
 	margin-right: auto;
-	margin-bottom: 4.5rem;
+	margin-bottom: 5rem;
+	margin-top: 5rem;
 	margin-left: auto;
 	padding: 3.25rem 2rem 2rem 2rem;
 	border: 1px solid #c4d8dc;
@@ -825,8 +827,8 @@ input[type='checkbox'] {
 }
 
 .cards-1 .card-image {
-	width: 12rem;
-	height: 12rem;
+	width: 6rem;
+	height: 6rem;
 	margin-right: auto;
 	margin-bottom: 2rem;
 	margin-left: auto;
@@ -1164,7 +1166,6 @@ input[type='checkbox'] {
 .basic-3 h2 {
 	margin-bottom: 3rem;
 	text-align: center;
-	
 }
 
 .basic-3 .image-container {
@@ -1419,14 +1420,6 @@ input[type='checkbox'] {
 .form-2 h2 {
 	margin-bottom: 1rem;
 	text-align: center;
-}
-
-.anthem{
-	margin-top: -7rem
-}
-
-.audio-wrapper{
-	margin-top: -1rem;
 }
 
 .form-2 .list-unstyled {
@@ -2190,9 +2183,5 @@ a:hover.back-to-top {
 		margin-left: 1.75rem;
 	}
 	/* end of extra pages */
-
-	.audio{
-		margin-left: 18rem;
-	}
 }
 /* end of min-width width 1200px */

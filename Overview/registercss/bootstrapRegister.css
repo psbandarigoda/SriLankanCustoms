@@ -83,6 +83,10 @@ p {
   margin-bottom: 1rem;
 }
 
+.anthem{
+  margin-top: -10rem;
+}
+
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -3628,6 +3632,13 @@ input[type="button"].btn-block {
   color: #fff;
   border-color: #007bff;
   background-color: #007bff;
+}
+
+.audio{
+  width: 300px;
+  height: 54px;
+  margin-left: 280px;
+  margin-top: -16rem;
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
