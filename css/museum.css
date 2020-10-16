@@ -84,11 +84,11 @@ section {
   animation: slide-down 0.5s ease-out;
 }
 
-.departments .tab-pane img {
+/*.departments .tab-pane img {
   float: left;
   max-width: 300px;
   padding: 0 15px 15px 0;
-}
+}*/
 
 @media (max-width: 768px) {
   .departments .tab-pane img {
@@ -964,17 +964,18 @@ input[type='checkbox'] {
 
   
 
+
 /**********************/
 /*     16. Footer     */
 /**********************/
 .footer {
-  padding-top: 1.625rem;
-  padding-bottom: 0.1rem;
+  padding-top: 1.05rem;
+  padding-bottom: 0.001rem;
   background: #2e2e2e;
 }
 
 .footer .footer-col {
-  margin-bottom: 2.25rem;
+  margin-bottom: 0.001rem;
 }
 
 .footer h4 {
@@ -983,8 +984,8 @@ input[type='checkbox'] {
 
 .footer .list-unstyled .fas {
   color: #00bfd8;
-  font-size: 0.5rem;
-  line-height: 1.375rem;
+  font-size: 0.01rem;
+  line-height: 1.02rem;
 }
 
 .footer .list-unstyled .media-body {
@@ -992,9 +993,9 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack {
-  margin-bottom: 0.75rem;
-  margin-right: 0.5rem;
-  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-right: 0.01rem;
+  font-size: 1.01rem;
 }
 
 .footer .fa-stack .fa-stack-1x {
@@ -1014,3 +1015,11 @@ input[type='checkbox'] {
 .footer .fa-stack:hover .fa-stack-2x {
     color: #00a7bd;
 }
+
+
+/* Header */
+  .header {
+    background: url('../images/contact-background.png') center center no-repeat;
+    background-size: cover; 
+
+  }
