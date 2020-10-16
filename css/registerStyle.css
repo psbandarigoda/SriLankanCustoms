@@ -1888,6 +1888,18 @@ a:hover.back-to-top {
 	}
 	/* end of services */
 
+	.cards-1 .card-image {
+    width: 10rem;
+    height: 10rem;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-left: auto;
+}
+
+.cards-1 .card {
+    max-width: 21rem;
+    height: 30rem;
+}
 
 	/* Details 1 */
 	.basic-1 .text-container {
