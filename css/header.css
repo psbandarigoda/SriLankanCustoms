@@ -987,6 +987,12 @@ input[type='checkbox'] {
   margin-bottom: 1rem;
   margin-right: 0.01rem;
   font-size: 1.01rem;
+
+.footer .fa-stack {
+  margin-bottom: 0.75rem;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+
 }
 
 .footer .fa-stack .fa-stack-1x {
