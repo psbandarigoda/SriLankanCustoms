@@ -33,6 +33,15 @@
           margin-top: 50px;
       } 
 
+      .sign_up{
+      	text-align: center;
+        margin-left: -220px;
+      }
+
+      h1{
+      	text-align: center;
+      	 margin-left: -220px;
+      }
 
       img{
         width: 100%;
@@ -58,7 +67,7 @@
 
       }
       .btn2:hover{
-        background: #85c1e9;
+        background: #fff;
         border: 1px solid;
         color: black;
 
@@ -82,7 +91,7 @@
           </div>
           <div class="col-lg-7 px-5 pt-5">
             <h1 class="font-weight-bold py-3">Sri Lanka Customs</h1>
-            <h4 class="sign_in">Sign up</h4>
+            <h4 class="sign_up">Sign up</h4>
             <form>
               <div class="form-row">
                 <div class="col-lg-7">
@@ -92,13 +101,13 @@
 
               <div class="form-row">
                 <div class="col-lg-7">
-                  <input type="tin_Number" placeholder="TIN Number" class="form-control my-3 p-4">
+                  <input type="tin_Number" id="tin_Number" name="tin_Number" placeholder="TIN Number" class="form-control my-3 p-4">
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="col-lg-7">
-                  <input type="email" name="email" placeholder="Email" class="form-control my-3 p-4">
+                  <input type="email" id="email" name="email" placeholder="Email" class="form-control my-3 p-4">
                 </div>
               </div>
 
@@ -116,7 +125,7 @@
 
               <div class="form-row">
                 <div class="col-lg-7">
-                  <button type="button" id="regbtn" class="btn2 mt-3 mb-5">Register</button>
+                  <button type="button" id="regbtn" class="btn2 mt-3 mb-5" onclick="validate()">Register</button>
                 </div>
               </div>
              
@@ -131,6 +140,50 @@
         </div>
       </div>
     </section>
+
+    <script type="text/javascript">
+      
+    function validate(){
+    var regName = /^[a-zA-Z\-]+$/;
+    var name = document.getElementById('cName').value;
+    if(!regName.test(cName)){
+        alert('Please enter your company name');
+        document.getElementById('').focus();
+        return false;
+    }else{
+        alert('Valid company name given.');
+        return true;
+    }
+
+
+
+}
+
+function validate()
+{
+  var TINNumber = document.getElementById('tin_Number').value;
+  var tinRGEX = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+  var tinResult = tinRGEX.test(TINNumber);
+  alert("TIN Number:"+tinResult );	
+}
+
+ function validate(){
+    var regEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    var email = document.getElementById('email').value;
+    if(!regEmail.test(email)){
+        alert('Please enter your Email address');
+        document.getElementById('email').focus();
+        return false;
+    }else{
+        alert('Valid company Email address.');
+        return true;
+    }
+
+
+
+}
+
+    </script>
 
 </body>
 </html>
