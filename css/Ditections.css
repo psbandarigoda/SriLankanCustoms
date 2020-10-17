@@ -84,11 +84,11 @@ section {
   animation: slide-down 0.5s ease-out;
 }
 
-/*.departments .tab-pane img {
+.departments .tab-pane img {
   float: left;
   max-width: 300px;
   padding: 0 15px 15px 0;
-}*/
+}
 
 @media (max-width: 768px) {
   .departments .tab-pane img {
@@ -103,6 +103,11 @@ section {
   font-weight: 600;
   margin-bottom: 20px;
   color: #00bfd8;
+}
+.departments .tab-pane h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .departments .tab-pane p {
@@ -178,7 +183,7 @@ h3 {
 
 h4 {
   color: #393939;
-  font: 700 1.375rem/1.875rem "Raleway", sans-serif;
+  font: 700 1.2rem/1.875rem "Raleway", sans-serif;
 }
 
 h5 {
@@ -964,18 +969,17 @@ input[type='checkbox'] {
 
   
 
-
 /**********************/
 /*     16. Footer     */
 /**********************/
 .footer {
-  padding-top: 1.05rem;
-  padding-bottom: 0.001rem;
+  padding-top: 1.625rem;
+  padding-bottom: 0.1rem;
   background: #2e2e2e;
 }
 
 .footer .footer-col {
-  margin-bottom: 0.001rem;
+  margin-bottom: 2.25rem;
 }
 
 .footer h4 {
@@ -984,8 +988,8 @@ input[type='checkbox'] {
 
 .footer .list-unstyled .fas {
   color: #00bfd8;
-  font-size: 0.01rem;
-  line-height: 1.02rem;
+  font-size: 0.5rem;
+  line-height: 1.375rem;
 }
 
 .footer .list-unstyled .media-body {
@@ -993,9 +997,9 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack {
-  margin-bottom: 1rem;
-  margin-right: 0.01rem;
-  font-size: 1.01rem;
+  margin-bottom: 0.75rem;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .footer .fa-stack .fa-stack-1x {
@@ -1015,11 +1019,3 @@ input[type='checkbox'] {
 .footer .fa-stack:hover .fa-stack-2x {
     color: #00a7bd;
 }
-
-
-/* Header */
-  .header {
-    background: url('../images/contact-background.png') center center no-repeat;
-    background-size: cover; 
-
-  }
